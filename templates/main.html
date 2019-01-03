@@ -1,0 +1,10 @@
+{% extends 'base.html'%}
+
+{% block title %} main page {%end%}
+
+{% block content %}
+this is main page <br>
+{% for i in range(1,7) %}
+    <img src="{{ static_url('images/{}.jpg').format(i) }}" width="400" height="300" alt="">
+{% end %}
+{% end %}

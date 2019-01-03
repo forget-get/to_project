@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block title %}post page {%end%}
+
+{% block content %}
+this is post page;{{post_id}}<br>
+<img src="{{ static_url('images/{}.jpg').format(post_id) }}" width="200" alt="">
+{% end %}
